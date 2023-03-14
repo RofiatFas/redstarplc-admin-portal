@@ -1,12 +1,12 @@
 import React from 'react';
-import SideBar from './SideBar';
+import SideBar from '../SideBar';
 
 function OperationDeliveryStationArrival() {
   return (
     <div>
         <SideBar/>
-        <main>
-            <div className='container-fluid pt-3'>
+        <main className='pt-5'>
+            <div className='container-fluid pt-4' id='delivery'>
             <p>Operations / Delivery station / Arrival</p>
                <h6>Delivery Station</h6>
 

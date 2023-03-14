@@ -28,7 +28,7 @@ function Login() {
                  <label className="form-check-label" for="exampleCheck1">Remember Me</label>
                </div>
                <div class="d-grid gap-2 mb-3">
-                 <Link to='/home' className="btn btn-primary btn-1" type="submit">Sign In</Link>
+                 <Link to='/home' className="btn btn-primary bg-1" type="submit">Sign In</Link>
                 </div>
                 <p className='text-center'>Don’t have an account? <a href='' className='stretched-link'>Sign Up now</a> </p>
              </form>

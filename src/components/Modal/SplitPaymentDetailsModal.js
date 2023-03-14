@@ -23,13 +23,19 @@ function SplitPaymentDetailsModal() {
         <div className='col-2'>
         <select id="inputState" class="form-select fs-13">
   <option selected>Please Select</option>
-  <option>...</option>
+  <option>POS</option>
+  <option>Cash</option>
+  <option>Bank transfer</option>
+  <option>Split</option>
 </select>
         </div>
         <div className='col-2'>
         <select id="inputState" class="form-select fs-13">
   <option selected>Please Select</option>
-  <option>...</option>
+  <option>UBA</option>
+  <option>GTB</option>
+  <option>Jaiz Bank</option>
+  <option>First Bank</option>
 </select>
         </div>
         <div className='col-2'><input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/></div>

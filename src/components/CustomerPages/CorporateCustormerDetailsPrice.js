@@ -1,18 +1,18 @@
 import React from 'react';
-import CreditRepaymentModal from '../components/Modal/CreditRepaymentModal';
-import TopUpWalletModal from '../components/Modal/TopUpWalletModal';
-import SideBar from '../components/SideBar';
+import CreditRepaymentModal from '../Modal/CreditRepaymentModal';
+import TopUpWalletModal from '../Modal/TopUpWalletModal';
+import SideBar from '../SideBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faSearch, } from '@fortawesome/free-solid-svg-icons';
-import DeleteModal from '../components/Modal/DeleteModal';
+import DeleteModal from '../Modal/DeleteModal';
 
 function CorporateCustormerDetailsPrice() {
   return (
     <div>
             <div>
        <SideBar/>
-       <main class=" pt-3">
-         <div class="container-fluid">
+       <main class=" pt-5">
+         <div class="container-fluid pt-4">
             <p> Customer / Corporate Customer / Details / Manage Price</p>
             <div className='d-flex'>
             <h5>Corporate Customer Service Prices</h5>

@@ -1,12 +1,12 @@
 import React from 'react';
-import SideBar from './SideBar';
+import SideBar from '../../SideBar';
 
 function OriginHubWeighingList() {
   return (
     <div>
     <SideBar/>
-    <main>
-        <div className='container-fluid'>
+    <main className='pt-5'>
+        <div className='container-fluid pt-4' id='origin'>
         <p>Operations / Origin hub / Weighing</p>
            <h5>Origin Hub</h5>
            <h6 className=''>Weighing</h6>
@@ -145,7 +145,7 @@ function OriginHubWeighingList() {
 </table>
      </div>
     </main>
-</div>
+   </div>
   )
 }
 

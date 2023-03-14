@@ -54,7 +54,8 @@ function DestinationHubSortingAwolowo() {
 <td>15kg</td>
 <td>2</td>
 <td>2546</td>
-<td className='text-success fw-bold'>Confirmed&nbsp;<FontAwesomeIcon icon={faCheck}/></td>
+<td className='text-success fw-bold'>Confirmed&nbsp;
+<FontAwesomeIcon icon={faCheck}/></td>
 </tr>
 <tr className=''>
 <td scope="row">005648752DB</td>

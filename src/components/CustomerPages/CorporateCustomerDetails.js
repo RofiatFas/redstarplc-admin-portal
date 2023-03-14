@@ -1,14 +1,14 @@
 import React from 'react'
-import CreditRepaymentModal from '../components/Modal/CreditRepaymentModal'
-import TopUpWalletModal from '../components/Modal/TopUpWalletModal'
-import SideBar from '../components/SideBar'
+import CreditRepaymentModal from '../Modal/CreditRepaymentModal';
+import TopUpWalletModal from '../Modal/TopUpWalletModal';
+import SideBar from '../SideBar';
 
 function CorporateCustomerDetails() {
   return (
     <div>
        <SideBar/>
-       <main class=" pt-3">
-         <div class="container-fluid">
+       <main class=" pt-5">
+         <div class="container-fluid pt-4">
             <p> Customer / Corporate Customer / Details</p>
                <h5>Corporate Customer Details</h5>
                <p className='fs-13'>Society For Family Health</p>

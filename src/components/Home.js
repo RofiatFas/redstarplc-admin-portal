@@ -10,8 +10,8 @@ function Home() {
     <div className='Home'>
       <SideBar />
 
-    <main class=" pt-3">
-      <div class="container-fluid">
+    <main class=" pt-5">
+      <div class="container-fluid pt-4">
         {/* <div class="row">
           <div class="col-md-12 fw-bold fs-3">Dashboard</div>
         </div> */}

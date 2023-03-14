@@ -1,42 +1,42 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faSearch } from '@fortawesome/free-solid-svg-icons';
 import React from 'react'
-import SideBar from './SideBar'
-import DeleteModal from './Modal/DeleteModal';
-import ViewCustomerDetailsModal from './Modal/ViewCustomerDetailsModal';
+import SideBar from '../SideBar'
+import DeleteModal from '../Modal/DeleteModal';
+import ViewCustomerDetailsModal from '../Modal/ViewCustomerDetailsModal';
 
 function ManageCustomers() {
   return (
     <div>
         <SideBar />
-        <main class=" pt-3">
-         <div class="container-fluid">
+        <main class=" pt-5">
+         <div class="container-fluid pt-4">
             <p>Center / Manage Frontline</p>
                <h6>Manage Customers</h6>
             <form class="row g-3">
-  <div class="col-12 c0l-sm-12 col-md-6 col-lg-3">
+  <div class="col-12 col-sm-12 col-md-6 col-lg-3">
     <label for="inputEmail4" class="form-label">Subsidiary</label>
     <select id="inputState" class="form-select">
       <option selected>Please Select</option>
       <option>...</option>
     </select>
   </div>
-  <div class="ol-12 c0l-sm-12 col-md-6 col-lg-3">
+  <div class="col-12 col-sm-12 col-md-6 col-lg-3">
     <label for="inputPassword4" class="form-label">Account Number</label>
     <input type="password" class="form-control" id="inputPassword4"/>
   </div>
-  <div class="ol-12 c0l-sm-12 col-md-6 col-lg-3">
+  <div class="ol-12 col-sm-12 col-md-6 col-lg-3">
     <label for="inputAddress" class="form-label">First Name / Company</label>
     <input type="text" class="form-control" id="inputAddress" placeholder=""/>
   </div>
-  <div class="ol-12 c0l-sm-12 col-md-6 col-lg-3">
+  <div class="ol-12 col-sm-12 col-md-6 col-lg-3">
     <label for="inputAddress2" class="form-label">Phone Number</label>
     <div className='d-flex'>
     <input type="text" class="form-control" id="inputAddress2" placeholder=""/>
     <button type="submit" class="btn btn-primary bg-1 fs-12 mx-3" data-bs-dismiss="modal">Search</button>
     </div>
   </div>
-</form>
+           </form>
          </div>
          
          <div className='container-fluid table-responsive'>

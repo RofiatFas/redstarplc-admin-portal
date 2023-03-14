@@ -1,12 +1,12 @@
 import React from 'react';
-import SideBar from './SideBar';
+import SideBar from '../../SideBar';
 
 function OriginHubDebagging() {
   return (
     <div>
     <SideBar/>
-    <main>
-        <div className='container-fluid'>
+    <main className='pt-5'>
+        <div className='container-fluid pt-4' id='origin'>
         <p>Operations / Destination hub / Debagging</p>
            <h5>Destination Hub</h5>
            <h6 className=''>Debagging</h6>

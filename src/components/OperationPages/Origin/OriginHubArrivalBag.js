@@ -1,20 +1,19 @@
-import React from 'react';
-import SideBar from './SideBar';
+import React from 'react'
+import SideBar from '../../SideBar'
 
-function OperationDeliveryStationArrival2() {
+function OriginHubArrivalBag() {
   return (
     <div>
         <SideBar/>
         <main>
-            <div className='container-fluid pt-3'>
-            <p>Operations / Delivery station / Arrival</p>
-               <h6>Delivery Station</h6>
-
+            <div className='container-fluid pt-4' id='origin'>
+            <p >Operations / Origin hub / Arrival</p>
+               <h6>Origin Hub</h6>
                <form className='mb-3'>
                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <label for="inputPassword4" class="form-label">Manifest number</label>
+    <label for="inputPassword4" class="form-label">Pack bag number</label>
 <div className='d-flex'>
-<input type="password" class="form-control" id="inputPassword4" placeholder='Manifest number'/>
+<input type="password" class="form-control" id="inputPassword4" placeholder='Enter bag number'/>
     <button class="btn btn-primary bg-1 fs-12 px-3 mx-2" type="submit">Search</button> 
 </div>
   </div>
@@ -27,6 +26,7 @@ function OperationDeliveryStationArrival2() {
       <th scope="col">Bag Number</th>
       <th scope="col">Driver Name</th>
       <th scope="col">Destination</th>
+      <th scope="col">Company Name</th>
       <th scope="col">Number of Items</th>
       <th scope="col">Total weight</th>
       <th scope="col">Content</th>
@@ -41,8 +41,10 @@ function OperationDeliveryStationArrival2() {
       <td>26 Shipments</td>
       <td>80kg</td>
       <td>Package</td>
+      <td>08038105601</td>
       <td className='fw-bold' style={{cursor:"pointer"}}><span className='text-success' data-bs-toggle="modal" data-bs-target="#exampleModal1">View</span>
-    </td>
+      <span><div class="vr mx-2"></div></span>
+      <span className='text-danger mx-2'data-bs-toggle="modal" data-bs-target="#exampleModal4">Delete</span></td>
     </tr>
 
 
@@ -55,4 +57,4 @@ function OperationDeliveryStationArrival2() {
   )
 }
 
-export default OperationDeliveryStationArrival2;
+export default OriginHubArrivalBag;

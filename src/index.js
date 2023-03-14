@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import { Provider } from 'react-redux';
+import RouterComponent from './RouterComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import './App.css';
+const container = document.getElementById('root')
+const root = ReactDOM.createRoot(container);
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterComponent />
   </React.StrictMode>
 );
-
-
