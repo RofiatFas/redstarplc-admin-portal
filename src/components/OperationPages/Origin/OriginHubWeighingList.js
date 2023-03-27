@@ -1,5 +1,6 @@
 import React from 'react';
 import SideBar from '../../SideBar';
+import { Link } from 'react-router-dom';
 
 function OriginHubWeighingList() {
   return (
@@ -35,7 +36,9 @@ function OriginHubWeighingList() {
   <td>Package</td>
   <td className=' text-success'><div className=''><span type="button" class="fs-13 verified-btn bg-2 text-success border-0 rounded-pill p-1"><span className='dot mx-2'></span>Completed</span>
     </div></td>
-    <td className='text-success fw-bold'>View</td>
+    <td className='fw-bold' id='origin'>
+      <Link to='/origin-hub-weighing-verification' className='text-decoration-none text-success'>View</Link>
+    </td>
 </tr>
 <tr className=''>
   <td scope="row">#00245631</td>
@@ -46,7 +49,9 @@ function OriginHubWeighingList() {
   <td>Package</td>
   <td className=' text-success'><div className=''><span type="button" class="fs-13 verified-btn bg-2 text-success border-0 rounded-pill p-1"><span className='dot mx-2'></span>Completed</span>
     </div></td>
-    <td className='text-success fw-bold'>View</td>
+    <td className='fw-bold' id='origin'>
+      <Link to='/origin-hub-weighing-verification' className='text-decoration-none text-success'>View</Link>
+    </td>
 </tr>
 <tr className=''>
   <td scope="row">#00245631</td>
@@ -57,18 +62,9 @@ function OriginHubWeighingList() {
   <td>Package</td>
   <td className=' text-success'><div className=''><span type="button" class="fs-13 verified-btn bg-2 text-success border-0 rounded-pill p-1"><span className='dot mx-2'></span>Completed</span>
     </div></td>
-    <td className='text-success fw-bold'>View</td>
-</tr>
-<tr className=''>
-  <td scope="row">#00245631</td>
-  <td>Biola Bakare</td>
-  <td>Lagos Hub</td>
-  <td>26 Shipments</td>
-  <td>80kg</td>
-  <td>Package</td>
-  <td className=' text-success'><div className=''><span type="button" class="fs-13 verified-btn bg-3 text-warning border-0 rounded-pill p-1"><span className='dot-2 mx-2'></span>Pending</span>
-    </div></td>
-    <td className='text-success fw-bold'>View</td>
+    <td className='fw-bold' id='origin'>
+      <Link to='/origin-hub-weighing-verification' className='text-decoration-none text-success'>View</Link>
+    </td>
 </tr>
 <tr className=''>
   <td scope="row">#00245631</td>
@@ -79,7 +75,9 @@ function OriginHubWeighingList() {
   <td>Package</td>
   <td className=' text-success'><div className=''><span type="button" class="fs-13 verified-btn bg-2 text-success border-0 rounded-pill p-1"><span className='dot mx-2'></span>Completed</span>
     </div></td>
-    <td className='text-success fw-bold'>View</td>
+    <td className='fw-bold' id='origin'>
+      <Link to='/origin-hub-weighing-verification' className='text-decoration-none text-success'>View</Link>
+    </td>
 </tr>
 <tr className=''>
   <td scope="row">#00245631</td>
@@ -90,29 +88,9 @@ function OriginHubWeighingList() {
   <td>Package</td>
   <td className=' text-success'><div className=''><span type="button" class="fs-13 verified-btn bg-2 text-success border-0 rounded-pill p-1"><span className='dot mx-2'></span>Completed</span>
     </div></td>
-    <td className='text-success fw-bold'>View</td>
-</tr>
-<tr className=''>
-  <td scope="row">#00245631</td>
-  <td>Biola Bakare</td>
-  <td>Lagos Hub</td>
-  <td>26 Shipments</td>
-  <td>80kg</td>
-  <td>Package</td>
-  <td className=' text-success'><div className=''><span type="button" class="fs-13 verified-btn bg-3 text-warning border-0 rounded-pill p-1"><span className='dot-2 mx-2'></span>Pending</span>
-    </div></td>
-    <td className='text-success fw-bold'>View</td>
-</tr>
-<tr className=''>
-  <td scope="row">#00245631</td>
-  <td>Biola Bakare</td>
-  <td>Lagos Hub</td>
-  <td>26 Shipments</td>
-  <td>80kg</td>
-  <td>Package</td>
-  <td className=' text-success'><div className=''><span type="button" class="fs-13 verified-btn bg-3 text-warning border-0 rounded-pill p-1"><span className='dot-2 mx-2'></span>Pending</span>
-    </div></td>
-    <td className='text-success fw-bold'>View</td>
+    <td className='fw-bold' id='origin'>
+      <Link to='/origin-hub-weighing-verification' className='text-decoration-none text-success'>View</Link>
+    </td>
 </tr>
 <tr className=''>
   <td scope="row">#00245631</td>
@@ -123,7 +101,9 @@ function OriginHubWeighingList() {
   <td>Package</td>
   <td className=' text-success'><div className=''><span type="button" class="fs-13 verified-btn bg-2 text-success border-0 rounded-pill p-1"><span className='dot mx-2'></span>Completed</span>
     </div></td>
-    <td className='text-success fw-bold'>View</td>
+    <td className='fw-bold' id='origin'>
+      <Link to='/origin-hub-weighing-verification' className='text-decoration-none text-success'>View</Link>
+    </td>
 </tr>
 <tr className=''>
   <td scope="row">#00245631</td>
@@ -134,12 +114,49 @@ function OriginHubWeighingList() {
   <td>Package</td>
   <td className=' text-success'><div className=''><span type="button" class="fs-13 verified-btn bg-2 text-success border-0 rounded-pill p-1"><span className='dot mx-2'></span>Completed</span>
     </div></td>
-    <td className='text-success fw-bold'>View</td>
+    <td className='fw-bold' id='origin'>
+      <Link to='/origin-hub-weighing-verification' className='text-decoration-none text-success'>View</Link>
+    </td>
 </tr>
-
-
-
-
+<tr className=''>
+  <td scope="row">#00245631</td>
+  <td>Biola Bakare</td>
+  <td>Lagos Hub</td>
+  <td>26 Shipments</td>
+  <td>80kg</td>
+  <td>Package</td>
+  <td className=' text-success'><div className=''><span type="button" class="fs-13 verified-btn bg-2 text-success border-0 rounded-pill p-1"><span className='dot mx-2'></span>Completed</span>
+    </div></td>
+    <td className='fw-bold' id='origin'>
+      <Link to='/origin-hub-weighing-verification' className='text-decoration-none text-success'>View</Link>
+    </td>
+</tr>
+<tr className=''>
+  <td scope="row">#00245631</td>
+  <td>Biola Bakare</td>
+  <td>Lagos Hub</td>
+  <td>26 Shipments</td>
+  <td>80kg</td>
+  <td>Package</td>
+  <td className=' text-success'><div className=''><span type="button" class="fs-13 verified-btn bg-2 text-success border-0 rounded-pill p-1"><span className='dot mx-2'></span>Completed</span>
+    </div></td>
+    <td className='fw-bold' id='origin'>
+      <Link to='/origin-hub-weighing-verification' className='text-decoration-none text-success'>View</Link>
+    </td>
+</tr>
+<tr className=''>
+  <td scope="row">#00245631</td>
+  <td>Biola Bakare</td>
+  <td>Lagos Hub</td>
+  <td>26 Shipments</td>
+  <td>80kg</td>
+  <td>Package</td>
+  <td className=' text-success'><div className=''><span type="button" class="fs-13 verified-btn bg-2 text-success border-0 rounded-pill p-1"><span className='dot mx-2'></span>Completed</span>
+    </div></td>
+    <td className='fw-bold' id='origin'>
+      <Link to='/origin-hub-weighing-verification' className='text-decoration-none text-success'>View</Link>
+    </td>
+</tr>
 
 </tbody>
 </table>

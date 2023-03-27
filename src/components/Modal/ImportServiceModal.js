@@ -5,7 +5,7 @@ import { faXmark, faXmarkCircle } from '@fortawesome/free-solid-svg-icons';
 function ImportServiceModal() {
   return (
     <div>
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{width:"100%!important"}}>
+        <div class="modal fade" id="importserviceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{width:"100%!important"}}>
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
@@ -19,7 +19,9 @@ function ImportServiceModal() {
                <label for="inputEmail4" class="form-label">Subsidiary</label>
                <select id="inputState" class="form-select">
                  <option selected>Please Select</option>
-                 <option>...</option>
+                 <option>Redstar Express</option>
+                 <option>Redstar logistics</option>
+                 <option>Redstar Freight</option>
                 </select>
                </div>
             </form>

@@ -1,5 +1,5 @@
 import React from 'react';
-import SideBar from './SideBar';
+import SideBar from '../../SideBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,14 +7,14 @@ function OriginHubDebaggingDestination() {
   return (
     <div>
     <SideBar/>
-    <main>
-        <div className='container-fluid'>
+    <main className='pt-5'>
+        <div className='container-fluid pt-4'>
         <p>Operations / Destination hub / Debagging</p>
            <h5>Destination Hub</h5>
            <h6 className=''>Debagging Pack Bag #00245631</h6>
            <div className='d-flex mb-3'>
             <p>26 Items</p>
-            <button class="btn btn-primary btn-1 fs-12 px-3 mx-2 ms-auto" type="submit" data-bs-toggle="modal" data-bs-target="#reweighingModal">Save</button> 
+            <button class="btn btn-primary btn-1 fs-12 px-3 mx-2 ms-auto" type="button" data-bs-toggle="modal" data-bs-target="#reweighingModal">Save</button> 
            </div>
         </div>
         <div className='container-fluid table-responsive'>

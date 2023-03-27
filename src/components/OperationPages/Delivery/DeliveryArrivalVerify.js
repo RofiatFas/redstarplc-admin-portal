@@ -1,14 +1,14 @@
 import React from 'react';
-import SideBar from './SideBar';
+import SideBar from '../../SideBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
-function OperationDeliveryArrivalVerify() {
+function DeliveryArrivalVerify() {
   return (
     <div>
     <SideBar/>
-    <main>
-        <div className='container-fluid pt-3'>
+    <main className='pt-5'>
+        <div className='container-fluid pt-4' id='delivery'>
         <p>Operations / Delivery station / Arrival</p>
            <h6>Delivery Station</h6>
            <div className='d-flex mb-3'>
@@ -200,4 +200,4 @@ function OperationDeliveryArrivalVerify() {
   )
 }
 
-export default OperationDeliveryArrivalVerify
+export default DeliveryArrivalVerify

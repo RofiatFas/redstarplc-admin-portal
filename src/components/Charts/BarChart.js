@@ -20,7 +20,7 @@ function BarChart() {
         labels: ['#10', '#20', '#30', '#40', '#50', '#60', '#70', '#80'],
         datasets: [
             {
-                label: '369',
+                label: '',
                 title: 'Frontline',
                 data: [2,4,5,9,4,2.9,3,2],
                 backgroundColor:'#102060',

@@ -1,7 +1,8 @@
 import React from 'react';
-import SideBar from '../SideBar';
+import SideBar from '../../SideBar';
+import { Link } from 'react-router-dom';
 
-function OperationDeliveryStationArrival() {
+function DeliveryStationArrival() {
   return (
     <div>
         <SideBar/>
@@ -15,7 +16,9 @@ function OperationDeliveryStationArrival() {
                 <label for="inputPassword4" class="form-label">Manifest number</label>
 <div className='d-flex'>
 <input type="password" class="form-control" id="inputPassword4" placeholder='Manifest number'/>
-    <button class="btn btn-primary bg-1 fs-12 px-3 mx-2" type="submit">Search</button> 
+    <div id='delivery'>
+    <Link to='/delivery-station-arrival2' class="btn btn-primary bg-1 fs-12 px-3 mx-2">Search</Link>
+      </div> 
 </div>
   </div>
                </form>
@@ -25,4 +28,4 @@ function OperationDeliveryStationArrival() {
   )
 }
 
-export default OperationDeliveryStationArrival
+export default DeliveryStationArrival

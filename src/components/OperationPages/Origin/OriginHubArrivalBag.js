@@ -1,11 +1,12 @@
 import React from 'react'
-import SideBar from '../../SideBar'
+import SideBar from '../../SideBar';
+import { Link } from 'react-router-dom';
 
 function OriginHubArrivalBag() {
   return (
     <div>
         <SideBar/>
-        <main>
+        <main className='pt-5'>
             <div className='container-fluid pt-4' id='origin'>
             <p >Operations / Origin hub / Arrival</p>
                <h6>Origin Hub</h6>
@@ -42,9 +43,9 @@ function OriginHubArrivalBag() {
       <td>80kg</td>
       <td>Package</td>
       <td>08038105601</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='text-success' data-bs-toggle="modal" data-bs-target="#exampleModal1">View</span>
-      <span><div class="vr mx-2"></div></span>
-      <span className='text-danger mx-2'data-bs-toggle="modal" data-bs-target="#exampleModal4">Delete</span></td>
+      <td className='fw-bold' id='origin'>
+        <Link to='/origin-hub-bag-view' className='text-decoration-none text-success'>View</Link>
+      </td>
     </tr>
 
 

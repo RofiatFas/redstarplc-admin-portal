@@ -1,12 +1,12 @@
 import React from 'react';
-import SideBar from './SideBar';
+import SideBar from '../../SideBar';
 
 function OriginHubArrivalBagView() {
   return (
     <div>
         <SideBar/>
-        <main>
-            <div className='container-fluid'>
+        <main className='pt-5'>
+            <div className='container-fluid pt-4' id='origin'>
             <p>Operations / Origin hub / Arrival</p>
                <h6>Verifying Pack Bag #00245631</h6>
                <div className='d-flex mb-3'>

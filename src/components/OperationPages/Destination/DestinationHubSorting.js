@@ -2,19 +2,23 @@ import React from 'react';
 import SideBar from '../../SideBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import StationModal from '../../Modal/StationModal';
+import { Link } from 'react-router-dom';
 
 function DestinationHubSorting() {
   return (
     <div>
     <SideBar/>
-    <main>
+    <main className='pt-5'>
         <div className='container-fluid pt-4' id='destination'>
         <p>Operations / Destination hub / Sorting</p>
            <h5>Destination Hub</h5>
            <h6 className=''>Sorting</h6>
            <div className='d-flex mb-3'>
-            <button class="btn btn-primary bg-1 assignbtn fs-12 px-3 mx-2 ms-auto" type="submit" data-bs-toggle="modal" data-bs-target="#reweighingModal">Assign to station</button> 
-            <button class="btn btn-primary bg-1 btn-1 fs-12 px-3 mx-2 " type="submit" data-bs-toggle="modal" data-bs-target="#reweighingModal">Next</button> 
+            <button class="btn btn-primary bg-1 assignbtn fs-12 px-3 mx-2 ms-auto" type="submit" data-bs-toggle="modal" data-bs-target="#stationModal">Assign to station</button> 
+            <div id='destination'>
+            <Link to='/destination-hub-sorting-apapa' class="btn btn-primary bg-1 btn-1 fs-12 px-3 mx-2 text-decoration-none">Next</Link> 
+            </div>
            </div>
         </div>
         <div className='container-fluid table-responsive'>
@@ -266,6 +270,7 @@ function DestinationHubSorting() {
 </table>
         </div>
     </main>
+    <StationModal/>
    </div>
   )
 }

@@ -19,7 +19,9 @@ function CreditRepaymentModal() {
                <label for="inputEmail4" class="form-label fw-bold">Bank Account</label>
                <select id="inputState" class="form-select">
                  <option selected>Please Select</option>
-                 <option>...</option>
+                 <option>Jaiz Bank</option>
+                 <option>UBA Bank</option>
+                 <option>GTB Bank</option>
                 </select>
                </div>
 

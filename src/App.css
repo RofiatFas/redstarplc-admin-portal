@@ -2,9 +2,16 @@
   background-color: #344178;
 } */
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url("./fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf") format("opentype");
+}
+
+
 html,body{
   overflow-x: hidden;
   background-color: #FAFAFA !important;
+  font-family: 'Plus Jakarta Sans' !important;
 }
 .Login{
   background-color: #344178;
@@ -91,6 +98,7 @@ html,body{
 .sidebar-link{
   display: flex !important;
   align-items: center !important;
+  /* font-family: 'inter'; */
 }
 
 .sidebar-link .right-icon{

@@ -1,13 +1,13 @@
 import React from 'react'
-import SingleBarChart from './Charts/SingleBarChart'
-import SideBar from './SideBar'
+import SingleBarChart from '../Charts/SingleBarChart'
+import SideBar from '../SideBar'
 
 function TransactionReport() {
   return (
     <div>
         <SideBar/>
-        <main className='pt-3'>
-            <div className='container-fluid'>
+        <main className='pt-5'>
+            <div className='container-fluid pt-4'>
                <p>Report / RSM Transaction Report</p>
                <h6>RSM Transaction Report</h6>
                <form class="row g-3 mb-3">

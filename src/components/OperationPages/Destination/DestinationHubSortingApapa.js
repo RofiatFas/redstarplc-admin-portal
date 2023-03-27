@@ -1,31 +1,39 @@
 import React from 'react';
-import SideBar from './SideBar';
+import SideBar from '../../SideBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+import CreateManifestModal from '../../Modal/CreateManifestModal';
 
 function DestinationHubSortingApapa() {
   return (
     <div>
            <div>
     <SideBar/>
-    <main>
-        <div className='container-fluid mt-3'>
+    <main className='pt-5'>
+        <div className='container-fluid pt-4' id='destination'>
         <p>Operations / Destination hub / Sorting / Apapa</p>
            <h5>Destination Hub</h5>
            <h6 className=''>Sorting</h6>
            <div class="d-flex justify-content-between fs-12 mb-3">
-              <div class="p-2 bd-highlight">
-              <button class="btn btn-primary bg-1 btn-1 fs-12 px-3 mx-2 " type="submit">Apapa</button> 
-              </div>
-              <div class="p-2 bd-highlight text-muted">Cele</div>
-              <div class="p-2 bd-highlight text-muted">Adeola Odeku</div>
-              <div class="p-2 bd-highlight text-muted">Awolowo</div>
+           <div class="p-2 bd-highlight" id='link destination'>
+       <Link to='/destination-hub-sorting-apapa' class="btn btn-primary bg-1 btn-1 fs-12 px-3 mx-2 text-decoration-none">Apapa</Link> 
+       </div>
+    <div class="p-2 bd-highlight" id='destination'>
+        <Link to='/destination-hub-sorting-cele' className='text-decoration-none text-muted'>Cele</Link>
+       </div>
+       <div class="p-2 bd-highlight" id='destination'>
+        <Link to='/destination-hub-sorting-adeola-odeku' className='text-decoration-none text-muted'>Adeola Odeku</Link>
+       </div>
+       <div class="p-2 bd-highlight" id='destination'>
+        <Link to='/destination-hub-sorting-awolowo' className='text-decoration-none text-muted'>Awolowo</Link>
+       </div>
               <div class="p-2 bd-highlight text-muted">Shomolu</div>
               <div class="p-2 bd-highlight text-muted">Lekki</div>
               <div class="p-2 bd-highlight text-muted">Ikeja</div>
               <div class="p-2 bd-highlight text-muted">Ajah</div>
               <div class="p-2 bd-highlight">
-              <button class="btn btn-primary assignbtn bg-1 fs-12 px-3 mx-2 " type="submit">Create Manifest</button> 
+              <button class="btn btn-primary assignbtn bg-1 fs-12 px-3 mx-2 " type="button" data-bs-toggle='modal' data-bs-target='#createmanifestModal'>Create Manifest</button> 
               </div>
            </div>
         </div>
@@ -203,6 +211,7 @@ function DestinationHubSortingApapa() {
 </table>
      </div>
     </main>
+    <CreateManifestModal/>
    </div>
     </div>
   )

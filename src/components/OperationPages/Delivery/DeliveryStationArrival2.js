@@ -1,11 +1,12 @@
 import React from 'react';
-import SideBar from '../SideBar';
+import SideBar from '../../SideBar';
+import { Link } from 'react-router-dom';
 
-function OperationDeliveryStationArrival2() {
+function DeliveryStationArrival2() {
   return (
     <div>
         <SideBar/>
-        <main className='mt-5'>
+        <main className='pt-5' id='delivery'>
             <div className='container-fluid pt-3'>
             <p>Operations / Delivery station / Arrival</p>
                <h6>Delivery Station</h6>
@@ -41,7 +42,7 @@ function OperationDeliveryStationArrival2() {
       <td>26 Shipments</td>
       <td>80kg</td>
       <td>Package</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='text-success' data-bs-toggle="modal" data-bs-target="#exampleModal1">View</span>
+      <td className='fw-bold' style={{cursor:"pointer"}}><Link to='/delivery-station-arrival-verify' className='text-success text-decoration-none'>View</Link>
     </td>
     </tr>
 
@@ -55,4 +56,4 @@ function OperationDeliveryStationArrival2() {
   )
 }
 
-export default OperationDeliveryStationArrival2;
+export default DeliveryStationArrival2;

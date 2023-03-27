@@ -1,14 +1,14 @@
 import React from 'react';
-import CommercialDetailsModal from './Modal/CommercialDetailsModal';
-import SplitPaymentDetailsModal from './Modal/SplitPaymentDetailsModal';
-import SideBar from './SideBar';
+import CommercialDetailsModal from '../Modal/CommercialDetailsModal';
+import SplitPaymentDetailsModal from '../Modal/SplitPaymentDetailsModal';
+import SideBar from '../SideBar';
 
 function NewShipmentSearch() {
   return (
     <div>
     <SideBar />
-    <main class=" pt-3">
-     <div class="container-fluid">
+    <main class=" pt-5">
+     <div class="container-fluid pt-4" id='new-shipment'>
         <p>New shipment</p>
         <h5>Submit Order Information</h5>
         <h6 className='mb-3'>Search for returning customer</h6>

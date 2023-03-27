@@ -1,18 +1,18 @@
 import React from 'react';
-import ReweighingModal from './Modal/ReweighingModal';
-import SideBar from './SideBar';
+import ReweighingModal from '../../Modal/ReweighingModal';
+import SideBar from '../../SideBar';
 
 function OriginHubWeighingListVerification() {
   return (
     <div>
     <SideBar/>
-    <main>
-        <div className='container-fluid'>
+    <main className='pt-5'>
+        <div className='container-fluid pt-4' id='origin'>
         <p>Operations / Origin hub / Weighing</p>
            <h6>Weighing Pack Bag #00245631</h6>
            <div className='d-flex mb-3'>
             <p>26 Items</p>
-            <button class="btn btn-primary btn-1 fs-12 px-3 mx-2 ms-auto" type="submit" data-bs-toggle="modal" data-bs-target="#reweighingModal">Update</button> 
+            <button class="btn btn-primary btn-1 fs-12 px-3 mx-2 ms-auto" type="submit">Update</button> 
            </div>
         </div>
         <div className='container-fluid table-responsive'>

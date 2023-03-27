@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 function AddServicePriceModal() {
   return (
     <div>
-              <div class="modal fade" id="creditrepaymentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{width:"100%!important"}}>
+              <div class="modal fade" id="addserviceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{width:"100%!important"}}>
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
@@ -17,7 +19,9 @@ function AddServicePriceModal() {
                <label for="inputEmail4" class="form-label fw-bold">Service</label>
                <select id="inputState" class="form-select">
                  <option selected>Please Select</option>
-                 <option>...</option>
+                 <option>Redstar Express</option>
+                 <option>Redstar logistics</option>
+                 <option>Redstar Freight</option>
                 </select>
                </div>
 

@@ -5,20 +5,22 @@ import SideBar from '../SideBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faSearch, } from '@fortawesome/free-solid-svg-icons';
 import DeleteModal from '../Modal/DeleteModal';
+import ImportServiceModal from '../Modal/ImportServiceModal';
+import AddServicePriceModal from '../Modal/AddServicePriceModal';
 
 function CorporateCustormerDetailsPrice() {
   return (
     <div>
             <div>
        <SideBar/>
-       <main class=" pt-5">
+       <main class=" pt-5" id='customer'>
          <div class="container-fluid pt-4">
             <p> Customer / Corporate Customer / Details / Manage Price</p>
             <div className='d-flex'>
             <h5>Corporate Customer Service Prices</h5>
             <div className='ms-auto'>
-            <button class="btn btn-primary btn-1 fs-12 ms-auto" style={{marginRight: "10px"}} type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal2">Add Service Price</button>
-            <button class="btn btn-primary btn-1 fs-12 ms-auto"  type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal2">Import Service Price</button>
+            <button class="btn btn-primary btn-1 fs-12 ms-auto" style={{marginRight: "10px"}} type="button" data-bs-toggle="modal" data-bs-target="#addserviceModal">Add Service Price</button>
+            <button class="btn btn-primary btn-1 fs-12 ms-auto"  type="submit" data-bs-toggle="modal" data-bs-target="#importserviceModal">Import Service Price</button>
             </div>
             </div>
                {/* <h5>Corporate Customer Service Prices</h5> */}
@@ -122,7 +124,7 @@ function CorporateCustormerDetailsPrice() {
       <td>877</td>
       <td>0.5</td>
       <td>410</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='color-1'>Edit</span>
+      <td className='fw-bold' style={{cursor:"pointer"}} type="button" data-bs-toggle="modal" data-bs-target="#addserviceModal"><span className='color-1'>Edit</span>
       <span><div class="vr mx-2"></div></span>
       <span className='text-danger mx-2'data-bs-toggle="modal" data-bs-target="#exampleModal4">Delete</span></td>
     </tr>
@@ -133,7 +135,7 @@ function CorporateCustormerDetailsPrice() {
       <td>877</td>
       <td>0.5</td>
       <td>410</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='color-1'>Edit</span>
+      <td className='fw-bold' style={{cursor:"pointer"}} type="button" data-bs-toggle="modal" data-bs-target="#addserviceModal"><span className='color-1'>Edit</span>
       <span><div class="vr mx-2"></div></span>
       <span className='text-danger mx-2'data-bs-toggle="modal" data-bs-target="#exampleModal4">Delete</span></td>
     </tr>
@@ -144,7 +146,7 @@ function CorporateCustormerDetailsPrice() {
       <td>877</td>
       <td>0.5</td>
       <td>410</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='color-1'>Edit</span>
+      <td className='fw-bold' style={{cursor:"pointer"}} type="button" data-bs-toggle="modal" data-bs-target="#addserviceModal"><span className='color-1'>Edit</span>
       <span><div class="vr mx-2"></div></span>
       <span className='text-danger mx-2'data-bs-toggle="modal" data-bs-target="#exampleModal4">Delete</span></td>
     </tr>
@@ -155,7 +157,7 @@ function CorporateCustormerDetailsPrice() {
       <td>877</td>
       <td>0.5</td>
       <td>410</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='color-1'>Edit</span>
+      <td className='fw-bold' style={{cursor:"pointer"}} type="button" data-bs-toggle="modal" data-bs-target="#addserviceModal"><span className='color-1'>Edit</span>
       <span><div class="vr mx-2"></div></span>
       <span className='text-danger mx-2'data-bs-toggle="modal" data-bs-target="#exampleModal4">Delete</span></td>
     </tr>
@@ -166,7 +168,7 @@ function CorporateCustormerDetailsPrice() {
       <td>877</td>
       <td>0.5</td>
       <td>410</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='color-1'>Edit</span>
+      <td className='fw-bold' style={{cursor:"pointer"}} type="button" data-bs-toggle="modal" data-bs-target="#addserviceModal"><span className='color-1'>Edit</span>
       <span><div class="vr mx-2"></div></span>
       <span className='text-danger mx-2'data-bs-toggle="modal" data-bs-target="#exampleModal4">Delete</span></td>
     </tr>
@@ -177,7 +179,7 @@ function CorporateCustormerDetailsPrice() {
       <td>877</td>
       <td>0.5</td>
       <td>410</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='color-1'>Edit</span>
+      <td className='fw-bold' style={{cursor:"pointer"}} type="button" data-bs-toggle="modal" data-bs-target="#addserviceModal"><span className='color-1'>Edit</span>
       <span><div class="vr mx-2"></div></span>
       <span className='text-danger mx-2'data-bs-toggle="modal" data-bs-target="#exampleModal4">Delete</span></td>
     </tr>
@@ -188,7 +190,7 @@ function CorporateCustormerDetailsPrice() {
       <td>877</td>
       <td>0.5</td>
       <td>410</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='color-1'>Edit</span>
+      <td className='fw-bold' style={{cursor:"pointer"}} type="button" data-bs-toggle="modal" data-bs-target="#addserviceModal"><span className='color-1'>Edit</span>
       <span><div class="vr mx-2"></div></span>
       <span className='text-danger mx-2'data-bs-toggle="modal" data-bs-target="#exampleModal4">Delete</span></td>
     </tr>
@@ -199,7 +201,7 @@ function CorporateCustormerDetailsPrice() {
       <td>877</td>
       <td>0.5</td>
       <td>410</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='color-1'>Edit</span>
+      <td className='fw-bold' style={{cursor:"pointer"}} type="button" data-bs-toggle="modal" data-bs-target="#addserviceModal"><span className='color-1'>Edit</span>
       <span><div class="vr mx-2"></div></span>
       <span className='text-danger mx-2'data-bs-toggle="modal" data-bs-target="#exampleModal4">Delete</span></td>
     </tr>
@@ -210,11 +212,21 @@ function CorporateCustormerDetailsPrice() {
       <td>877</td>
       <td>0.5</td>
       <td>410</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='color-1'>Edit</span>
+      <td className='fw-bold' style={{cursor:"pointer"}} type="button" data-bs-toggle="modal" data-bs-target="#addserviceModal"><span className='color-1'>Edit</span>
       <span><div class="vr mx-2"></div></span>
       <span className='text-danger mx-2'data-bs-toggle="modal" data-bs-target="#exampleModal4">Delete</span></td>
     </tr>
-
+    <tr className=''>
+      <td scope="row">LOS</td>
+      <td>0.5</td>
+      <td>10</td>
+      <td>877</td>
+      <td>0.5</td>
+      <td>410</td>
+      <td className='fw-bold' style={{cursor:"pointer"}} type="button" data-bs-toggle="modal" data-bs-target="#addserviceModal"><span className='color-1'>Edit</span>
+      <span><div class="vr mx-2"></div></span>
+      <span className='text-danger mx-2'data-bs-toggle="modal" data-bs-target="#exampleModal4">Delete</span></td>
+    </tr>
   </tbody>
 </table>
          </div>
@@ -224,6 +236,8 @@ function CorporateCustormerDetailsPrice() {
         <TopUpWalletModal/>
         <CreditRepaymentModal />
         <DeleteModal />
+        <ImportServiceModal/>
+        <AddServicePriceModal/>
     </div>
     </div>
   )

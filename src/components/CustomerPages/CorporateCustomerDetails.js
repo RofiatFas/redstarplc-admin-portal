@@ -2,12 +2,13 @@ import React from 'react'
 import CreditRepaymentModal from '../Modal/CreditRepaymentModal';
 import TopUpWalletModal from '../Modal/TopUpWalletModal';
 import SideBar from '../SideBar';
+import { Link } from 'react-router-dom';
 
 function CorporateCustomerDetails() {
   return (
     <div>
        <SideBar/>
-       <main class=" pt-5">
+       <main class="pt-5" id='customer'>
          <div class="container-fluid pt-4">
             <p> Customer / Corporate Customer / Details</p>
                <h5>Corporate Customer Details</h5>
@@ -103,8 +104,10 @@ function CorporateCustomerDetails() {
     <label for="inputAddress2" class="form-label fs-13 fw-bold"></label>
     <div className='d-flex my-1'>
     {/* <input type="text" class="form-control" id="inputAddress2" placeholder=""/> */}
-    <button type="submit" class="btn btn-primary bg-1 fs-10 rebtn" data-bs-toggle="modal" data-bs-target="#creditrepaymentModal">Repayment</button>
-    <button type="submit" class="btn btn-primary bg-1 fs-10 mx-2 rebtn">Manage&nbsp;Price</button>
+    <button type="button" class="btn btn-primary bg-1 fs-10 rebtn" data-bs-toggle="modal" data-bs-target="#creditrepaymentModal">Repayment</button>
+    <div id='customer'>
+    <Link to='/corporate-customer-details-price' type="button" class="btn btn-primary bg-1 fs-10 mx-2 rebtn">Manage&nbsp;Price</Link>
+    </div>
     </div>
   </div>
   

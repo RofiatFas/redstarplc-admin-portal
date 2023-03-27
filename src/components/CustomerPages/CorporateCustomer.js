@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faCloudArrowUp, faSearch, faTrashCan, faXmark } from '@fortawesome/free-solid-svg-icons';
-import React from 'react'
+import { faChevronLeft, faSearch, faXmark } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
 import SideBar from '../SideBar'
 import DeleteModal from '../Modal/DeleteModal';
 import ImportServiceModal from '../Modal/ImportServiceModal';
+import { Link } from 'react-router-dom';
 
 function CorporateCustomer() {
   return (
@@ -14,14 +15,16 @@ function CorporateCustomer() {
             <p>Center / Manage Frontline</p>
             <div className='d-flex'>
                <h6>Frontline Staff</h6> 
-               <button class="btn btn-primary btn-1 fs-12 ms-auto" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal2">Import Customer</button>
+               <button class="btn btn-primary btn-1 fs-10 ms-auto" type="submit" data-bs-toggle="modal" data-bs-target="#importserviceModal">Import&nbsp;Customer</button>
             </div>
             <form class="row g-3">
   <div class="col-12 c0l-sm-12 col-md-6 col-lg-3">
     <label for="inputEmail4" class="form-label">Subsidiary</label>
     <select id="inputState" class="form-select">
       <option selected>Please Select</option>
-      <option>...</option>
+      <option>Redstar Express</option>
+      <option>Redstar logistics</option>
+      <option>Redstar Freight</option>
     </select>
   </div>
   <div class="col-12 col-sm-12 col-md-6 col-lg-3">
@@ -78,7 +81,9 @@ function CorporateCustomer() {
       <td>bsadiq@redstarplc.com</td>
       <td>08038105601</td>
       <td>23.95</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='text-success' data-bs-toggle="modal" data-bs-target="#exampleModal1">View</span></td>
+      <td id='customer'>
+        <Link to='/corporate-customer-details' className='text-success fw-bold text-decoration-none'>View</Link>
+      </td>
     </tr>
     <tr className=''>
       <td scope="row">RSELC02261</td>
@@ -89,7 +94,9 @@ function CorporateCustomer() {
       <td>bsadiq@redstarplc.com</td>
       <td>08038105601</td>
       <td>23.95</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='text-success' data-bs-toggle="modal" data-bs-target="#exampleModal1">View</span></td>
+      <td id='customer'>
+        <Link to='/corporate-customer-details' className='text-success fw-bold text-decoration-none'>View</Link>
+      </td>
     </tr>
     <tr className=''>
       <td scope="row">RSELC02261</td>
@@ -100,7 +107,9 @@ function CorporateCustomer() {
       <td>bsadiq@redstarplc.com</td>
       <td>08038105601</td>
       <td>23.95</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='text-success' data-bs-toggle="modal" data-bs-target="#exampleModal1">View</span></td>
+      <td id='customer'>
+        <Link to='/corporate-customer-details' className='text-success fw-bold text-decoration-none'>View</Link>
+      </td>
     </tr>
     <tr className=''>
       <td scope="row">RSELC02261</td>
@@ -111,7 +120,9 @@ function CorporateCustomer() {
       <td>bsadiq@redstarplc.com</td>
       <td>08038105601</td>
       <td>23.95</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='text-success' data-bs-toggle="modal" data-bs-target="#exampleModal1">View</span></td>
+      <td id='customer'>
+        <Link to='/corporate-customer-details' className='text-success fw-bold text-decoration-none'>View</Link>
+      </td>
     </tr>
     <tr className=''>
       <td scope="row">RSELC02261</td>
@@ -122,7 +133,9 @@ function CorporateCustomer() {
       <td>bsadiq@redstarplc.com</td>
       <td>08038105601</td>
       <td>23.95</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='text-success' data-bs-toggle="modal" data-bs-target="#exampleModal1">View</span></td>
+      <td id='customer'>
+        <Link to='/corporate-customer-details' className='text-success fw-bold text-decoration-none'>View</Link>
+      </td>
     </tr>
     <tr className=''>
       <td scope="row">RSELC02261</td>
@@ -133,7 +146,9 @@ function CorporateCustomer() {
       <td>bsadiq@redstarplc.com</td>
       <td>08038105601</td>
       <td>23.95</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='text-success' data-bs-toggle="modal" data-bs-target="#exampleModal1">View</span></td>
+      <td id='customer'>
+        <Link to='/corporate-customer-details' className='text-success fw-bold text-decoration-none'>View</Link>
+      </td>
     </tr>
     <tr className=''>
       <td scope="row">RSELC02261</td>
@@ -144,7 +159,9 @@ function CorporateCustomer() {
       <td>bsadiq@redstarplc.com</td>
       <td>08038105601</td>
       <td>23.95</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='text-success' data-bs-toggle="modal" data-bs-target="#exampleModal1">View</span></td>
+      <td id='customer'>
+        <Link to='/corporate-customer-details' className='text-success fw-bold text-decoration-none'>View</Link>
+      </td>
     </tr>
     <tr className=''>
       <td scope="row">RSELC02261</td>
@@ -155,7 +172,9 @@ function CorporateCustomer() {
       <td>bsadiq@redstarplc.com</td>
       <td>08038105601</td>
       <td>23.95</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='text-success' data-bs-toggle="modal" data-bs-target="#exampleModal1">View</span></td>
+      <td id='customer'>
+        <Link to='/corporate-customer-details' className='text-success fw-bold text-decoration-none'>View</Link>
+      </td>
     </tr>
     <tr className=''>
       <td scope="row">RSELC02261</td>
@@ -166,7 +185,74 @@ function CorporateCustomer() {
       <td>bsadiq@redstarplc.com</td>
       <td>08038105601</td>
       <td>23.95</td>
-      <td className='fw-bold' style={{cursor:"pointer"}}><span className='text-success' data-bs-toggle="modal" data-bs-target="#exampleModal1">View</span></td>
+      <td id='customer'>
+        <Link to='/corporate-customer-details' className='text-success fw-bold text-decoration-none'>View</Link>
+      </td>
+    </tr>
+    <tr className=''>
+      <td scope="row">RSELC02261</td>
+      <td>Mrs</td>
+      <td>CHIDINMA TOM</td>
+      <td>ZENITH BANK</td>
+      <td>40101</td>
+      <td>bsadiq@redstarplc.com</td>
+      <td>08038105601</td>
+      <td>23.95</td>
+      <td id='customer'>
+        <Link to='/corporate-customer-details' className='text-success fw-bold text-decoration-none'>View</Link>
+      </td>
+    </tr>
+    <tr className=''>
+      <td scope="row">RSELC02261</td>
+      <td>Mrs</td>
+      <td>CHIDINMA TOM</td>
+      <td>ZENITH BANK</td>
+      <td>40101</td>
+      <td>bsadiq@redstarplc.com</td>
+      <td>08038105601</td>
+      <td>23.95</td>
+      <td id='customer'>
+        <Link to='/corporate-customer-details' className='text-success fw-bold text-decoration-none'>View</Link>
+      </td>
+    </tr>
+    <tr className=''>
+      <td scope="row">RSELC02261</td>
+      <td>Mrs</td>
+      <td>CHIDINMA TOM</td>
+      <td>ZENITH BANK</td>
+      <td>40101</td>
+      <td>bsadiq@redstarplc.com</td>
+      <td>08038105601</td>
+      <td>23.95</td>
+      <td id='customer'>
+        <Link to='/corporate-customer-details' className='text-success fw-bold text-decoration-none'>View</Link>
+      </td>
+    </tr>
+    <tr className=''>
+      <td scope="row">RSELC02261</td>
+      <td>Mrs</td>
+      <td>CHIDINMA TOM</td>
+      <td>ZENITH BANK</td>
+      <td>40101</td>
+      <td>bsadiq@redstarplc.com</td>
+      <td>08038105601</td>
+      <td>23.95</td>
+      <td id='customer'>
+        <Link to='/corporate-customer-details' className='text-success fw-bold text-decoration-none'>View</Link>
+      </td>
+    </tr>
+    <tr className=''>
+      <td scope="row">RSELC02261</td>
+      <td>Mrs</td>
+      <td>CHIDINMA TOM</td>
+      <td>ZENITH BANK</td>
+      <td>40101</td>
+      <td>bsadiq@redstarplc.com</td>
+      <td>08038105601</td>
+      <td>23.95</td>
+      <td id='customer'>
+        <Link to='/corporate-customer-details' className='text-success fw-bold text-decoration-none'>View</Link>
+      </td>
     </tr>
    
   </tbody>

@@ -1,5 +1,7 @@
 import React from 'react';
+import CreateDeliveryBagModal from '../../Modal/CreateDeliveryBagModal';
 import SideBar from '../../SideBar';
+import { Link } from 'react-router-dom';
 
 function DeliveryStationDelivery() {
   return (
@@ -11,9 +13,13 @@ function DeliveryStationDelivery() {
            <h5>Delivery Station</h5>
            <h6 className='mb-2'>Delivery Shipment</h6>
            <div className='d-flex my-3'>
-               <button class="btn btn-primary btn-1 fs-12 " type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal2">Onforwarding</button>
-               <p className='fs-12 mx-2 p-2 text-muted'>Pickup</p>
-               <button class="btn btn-primary assignbtn bg-1 fs-12 ms-auto" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal2">Create Delivery Bag</button>
+            <div id='delivery'>
+            <Link to='/delivery-station-onforwarding' class="btn btn-primary btn-1 fs-12 text-decoration-none" type="button">Onforwarding</Link>
+            </div>
+               <div id='delivery'>
+               <Link to='/delivery-station-pickup' className='fs-12 mx-2 p-2 text-muted text-decoration-none '>Pickup</Link>
+               </div>
+               <button class="btn btn-primary assignbtn bg-1 fs-12 ms-auto" type="submit" data-bs-toggle="modal" data-bs-target="#createdeliverybagModal">Create Delivery Bag</button>
             </div>
         </div>
         <div className='container-fluid table-responsive '>
@@ -264,6 +270,7 @@ function DeliveryStationDelivery() {
 </table>
         </div>
     </main>
+    <CreateDeliveryBagModal/>
    </div>
   )
 }
